@@ -1,0 +1,30 @@
+<app-navbar></app-navbar>
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">Tacos & More</h1>
+        <div class="d-flex justify-content-center">
+            <p class="lead w-50">
+                A collection of our favorire taco recipes and more!
+            </p>
+        </div>
+        <p>
+            <a class="btn btn-primary" routerLink="/recipes/new">Add New Recipe</a>
+        </p>
+    </div>
+</section>
+<section class="container">
+    <div class="row">
+        <ng-container *ngFor="let recipe of recipeService.getRecipes()">
+            <div class="col d-flex justify-content-center">
+                <div class="card">
+                    <img class="card-img-top" [src]="recipe.imageUrl" alt="{{recipe.title}}">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title text-center">{{recipe.title}}</h5>
+                        <p class="card-text text-center">{{recipe.description}}</p>
+                        <a routerLink="/recipes/{{recipe.id}}" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</section>

@@ -1,0 +1,43 @@
+<app-navbar></app-navbar>
+<img src="{{recipe.imageUrl}}" alt="recipe.title" class="header-image">
+<div class="container">
+    <div class="row w-100 d-flex justify-content-end">
+        <button class="btn btn-danger" (click)="deleteRecipe()">Delete</button>
+    </div>
+    <div class="row d-flex justify-content-center">
+        <div class="col-6">
+            <h1 class="text-center">{{recipe.title}}</h1>
+            <p class="text-center">{{recipe.description}}</p>
+        </div>
+    </div>
+    <div class="main">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 text-center">
+                <h3>Serves: <span class="serves">{{recipe.serves}}</span></h3>
+                <hr>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-4 text-center">
+                <h3>Ingredients</h3>
+                <div *ngFor="let ingredient of recipe.ingredients">
+                    {{ingredient.amount}} - {{ingredient.name}}
+                </div>
+            </div>
+            <div class="col-6 d-flex flex-column">
+                <h3 class="text-center">Instructions</h3>
+                <ol class="d-flex flex-column justify-content-between">
+                    <div class="d-flex justify-content-around" *ngFor="let instruction of recipe.instructions">
+                        <li>
+                            {{instruction}}
+                        </li>
+                    </div>
+                </ol>
+            </div>
+        </div>
+        <div class="row back-and-edit d-flex justify-content-center">
+            <button class="btn btn-primary" (click)="back()">Back</button>
+            <button class="btn btn-primary" routerLink="/recipes/edit/{{recipe.id}}">Edit</button>
+        </div>
+    </div>
+</div>

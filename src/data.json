@@ -1,0 +1,87 @@
+{
+    "recipes": [
+        {
+            "id": 1,
+            "title": "Best Salad in the World",
+            "description": "This is a recipe for the best tasting salad in the world. It uses carrots and lettuce.",
+            "serves": "2 people",
+            "imageUrl": "./assets/salad.jpg",
+            "ingredients": [
+                {
+                    "amount": "1 head",
+                    "name": "lettuce"
+                },
+                {
+                    "amount": "10",
+                    "name": "carrots"
+                },
+                {
+                    "amount": "2 Tbs",
+                    "name": "ranch dressing"
+                }
+            ],
+            "instructions": [
+                "remove lettuce leaves",
+                "add lettuce leaves to a large bowl",
+                "then add the carrots to the bowl",
+                "add the ranch dressing",
+                "then mix the ingredients in the bowl"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Cookies",
+            "description": "This is a recipe for chocolate chip cookies.",
+            "serves": "10 people",
+            "imageUrl": "./assets/cookies.jpg",
+            "ingredients": [
+                {
+                    "amount": "1 bag",
+                    "name": "flour"
+                },
+                {
+                    "amount": "10",
+                    "name": "chocolate tips"
+                },
+                {
+                    "amount": "2",
+                    "name": "eggs"
+                },
+                {
+                    "amount": "1 cup",
+                    "name": "sugar"
+                }
+            ],
+            "instructions": [
+                "mix ingredients",
+                "bake at 350 F"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "O.K. Nachos",
+            "description": "Decent nacho recipe.",
+            "serves": "4 people",
+            "imageUrl": "./assets/nachos.jpg",
+            "ingredients": [
+                {
+                    "amount": "1 bag",
+                    "name": "chips"
+                },
+                {
+                    "amount": "1 Ib",
+                    "name": "beef"
+                },
+                {
+                    "amount": "2 Tbs",
+                    "name": "seasoning"
+                }
+            ],
+            "instructions": [
+                "brown meat",
+                "add seasoning",
+                "serve"
+            ]
+        }
+    ]
+}
